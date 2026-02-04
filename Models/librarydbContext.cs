@@ -27,7 +27,7 @@ namespace Library.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("server=localhost;database=librarydb;user=root;password=");
+                optionsBuilder.UseMySql("server=localhost;database=librarydb;user=root;password=");
             }
         }
 

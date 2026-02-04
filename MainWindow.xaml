@@ -8,5 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Frame x:Name="MainPage" Padding="5"/>
+        <Menu Margin="0,10,0,403">
+            <MenuItem Click="MenuItem_Click" Header="Read">
+                <MenuItem Header="Authors" />
+                <MenuItem Header="Books"/>
+                <MenuItem Header="Categories" />
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

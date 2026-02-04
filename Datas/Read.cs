@@ -11,18 +11,30 @@ namespace Library.Datas
     {
         public List<Authors> Readauthours()
         {
-            try
-            {
-                using(var context = new Models.librarydbContext())
-                {
-                    var users = context.Authors.ToList();
-                    return users;
-                }
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+              using(var context = new librarydbContext())
+              {
+                   var users = context.Authors.ToList();
+                   return users;
+              }
+        }
+
+
+        public List<Books> Readbooks()
+        {
+              using(var context = new librarydbContext())
+              {
+                   var users = context.Books.ToList();
+                   return users;
+              }
+        }
+
+        public List<Categories> Readcategories()
+        {
+              using(var context = new librarydbContext())
+              {
+                   var users = context.Categories.ToList();
+                   return users;
+              }
         }
     }
 }

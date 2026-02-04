@@ -25,5 +25,10 @@ namespace Library
             InitializeComponent();
             MainPage.Navigate(new Views.SghowDatas());
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

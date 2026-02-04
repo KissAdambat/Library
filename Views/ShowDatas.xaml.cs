@@ -25,8 +25,21 @@ namespace Library.Views
         public SghowDatas()
         {
             InitializeComponent();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             dataGrid1.ItemsSource = read.Readauthours();
+        }
+
+        private void books_Click(object sender, RoutedEventArgs e)
+        {
+            dataGrid1.ItemsSource = read.Readbooks();
+        }
+
+        private void categories_Click(object sender, RoutedEventArgs e)
+        {
+            dataGrid1.ItemsSource = read.Readcategories();
         }
     }
 }
