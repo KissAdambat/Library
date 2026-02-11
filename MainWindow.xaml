@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Frame x:Name="MainPage" Padding="5"/>
-        <Menu Margin="0,10,0,403">
-            <MenuItem Click="MenuItem_Click" Header="Read">
-                <MenuItem Header="Authors" />
+        <Frame x:Name="MainPage" Padding="5" Navigated="MainPage_Navigated"/>
+        <Menu Margin="0,0,0,414">
+            <MenuItem Header="Read">
+                <MenuItem Header="Authors"/>
                 <MenuItem Header="Books"/>
-                <MenuItem Header="Categories" />
+                <MenuItem Header="Categories"/>
+            </MenuItem>
+            <MenuItem Header="Add">
+                <MenuItem Header="Authors" Click="authors"/>
+                <MenuItem Header="Books"/>
             </MenuItem>
         </Menu>
     </Grid>

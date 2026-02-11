@@ -171,6 +171,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Datas\AddNewItem.cs" />
+    <Compile Include="Views\AddAuthors.xaml.cs">
+      <DependentUpon>AddAuthors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShowDatas.xaml.cs">
       <DependentUpon>ShowDatas.xaml</DependentUpon>
     </Compile>
@@ -187,6 +191,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\AddAuthors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShowDatas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

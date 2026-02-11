@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,16 @@ namespace Library
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void MainPage_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void authors(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.AddAuthors());
         }
     }
 }
