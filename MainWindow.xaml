@@ -16,7 +16,8 @@
             </MenuItem>
             <MenuItem Header="Add">
                 <MenuItem Header="Authors" Click="authors"/>
-                <MenuItem Header="Books"/>
+                <MenuItem Header="Books" Click="books"/>
+                <MenuItem Header="Categories"/>
             </MenuItem>
         </Menu>
     </Grid>

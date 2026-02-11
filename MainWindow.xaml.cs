@@ -41,5 +41,9 @@ namespace Library
         {
             MainPage.Navigate(new Views.AddAuthors());
         }
+        private void books(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.AddBooks());
+        }
     }
 }

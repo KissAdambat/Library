@@ -175,6 +175,12 @@
     <Compile Include="Views\AddAuthors.xaml.cs">
       <DependentUpon>AddAuthors.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AddBooks.xaml.cs">
+      <DependentUpon>AddBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddCategories.xaml.cs">
+      <DependentUpon>AddCategories.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShowDatas.xaml.cs">
       <DependentUpon>ShowDatas.xaml</DependentUpon>
     </Compile>
@@ -192,6 +198,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\AddAuthors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddCategories.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,9 +12,9 @@ namespace Library.Datas
     {
         public object CreateAuthors(string name)
         {
-            using (var context = new librarydbContext()) 
+            using (var context = new librarydbContext())
             {
-                var author = new Authors 
+                var author = new Authors
                 {
                     AuthorName = name,
                 };
@@ -39,6 +39,20 @@ namespace Library.Datas
                 context.Books.Add(book);
                 context.SaveChanges();
 
+                return MessageBox.Show("Sikeresen hozzáadta!");
+            }
+        }
+
+        public object CreateCategories(string name)
+        {
+            using (var context = new librarydbContext())
+            {
+                var category = new Categories
+                {
+                    CategoryName = name,
+                };
+                context.Categories.Add(category);
+                context.SaveChanges();
                 return MessageBox.Show("Sikeresen hozzáadta!");
             }
         }
