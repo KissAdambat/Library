@@ -10,14 +10,19 @@
         <Frame x:Name="MainPage" Padding="5" Navigated="MainPage_Navigated"/>
         <Menu Margin="0,0,0,414">
             <MenuItem Header="Read">
-                <MenuItem Header="Authors"/>
-                <MenuItem Header="Books"/>
-                <MenuItem Header="Categories"/>
+                <MenuItem Header="Authors" Click="ReadAuthors"/>
+                <MenuItem Header="Books" Click="ReadBooks"/>
+                <MenuItem Header="Categories" Click="ReadCategories"/>
             </MenuItem>
             <MenuItem Header="Add">
                 <MenuItem Header="Authors" Click="authors"/>
                 <MenuItem Header="Books" Click="books"/>
-                <MenuItem Header="Categories"/>
+                <MenuItem Header="Categories" Click="categories"/>
+            </MenuItem>
+            <MenuItem Header="Delete">
+                <MenuItem Header="Authors" Click="deleteauthors"/>
+                <MenuItem Header="Books" Click="deletebooks"/>
+                <MenuItem Header="Categories" Click="deletecategories"/>
             </MenuItem>
         </Menu>
     </Grid>

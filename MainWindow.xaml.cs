@@ -1,4 +1,6 @@
-﻿using Library.Models;
+﻿using Library.Datas;
+using Library.Models;
+using Library.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,8 @@ namespace Library
     /// </summary>
     public partial class MainWindow : Window
     {
+        Read read = new Read();
+        SghowDatas sghow = new SghowDatas();
         public MainWindow()
         {
             InitializeComponent();
@@ -44,6 +48,40 @@ namespace Library
         private void books(object sender, RoutedEventArgs e)
         {
             MainPage.Navigate(new Views.AddBooks());
+        }
+        private void ReadAuthors(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.SghowDatas());
+            var data = read.Readauthours();
+            sghow.dataGrid1.ItemsSource = data;
+        }
+        private void ReadBooks(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.SghowDatas());
+            var data = read.Readbooks();
+            sghow.dataGrid1.ItemsSource = data;
+        }
+        private void ReadCategories(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.SghowDatas());
+            var data = read.Readcategories();
+            sghow.dataGrid1.ItemsSource = data;
+        }
+        private void categories(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.AddCategories());
+        }
+        private void deleteauthors(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.DeleteAuthors());
+        }
+        private void deletebooks(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.DeleteBooks());
+        }
+        private void deletecategories(object sender, RoutedEventArgs e)
+        {
+            MainPage.Navigate(new Views.DeleteCategories());
         }
     }
 }

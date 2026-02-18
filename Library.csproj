@@ -172,6 +172,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Datas\AddNewItem.cs" />
+    <Compile Include="Datas\DeleteDatas.cs" />
     <Compile Include="Views\AddAuthors.xaml.cs">
       <DependentUpon>AddAuthors.xaml</DependentUpon>
     </Compile>
@@ -180,6 +181,15 @@
     </Compile>
     <Compile Include="Views\AddCategories.xaml.cs">
       <DependentUpon>AddCategories.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteAuthors.xaml.cs">
+      <DependentUpon>DeleteAuthors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteBooks.xaml.cs">
+      <DependentUpon>DeleteBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteCategories.xaml.cs">
+      <DependentUpon>DeleteCategories.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShowDatas.xaml.cs">
       <DependentUpon>ShowDatas.xaml</DependentUpon>
@@ -206,6 +216,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AddCategories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeleteAuthors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeleteBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeleteCategories.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
