@@ -51,21 +51,15 @@ namespace Library
         }
         private void ReadAuthors(object sender, RoutedEventArgs e)
         {
-            MainPage.Navigate(new Views.SghowDatas());
-            var data = read.Readauthours();
-            sghow.dataGrid1.ItemsSource = data;
+            MainPage.Navigate(new Views.ShowAuthors());
         }
         private void ReadBooks(object sender, RoutedEventArgs e)
         {
-            MainPage.Navigate(new Views.SghowDatas());
-            var data = read.Readbooks();
-            sghow.dataGrid1.ItemsSource = data;
+            MainPage.Navigate(new Views.ShowBooks());
         }
         private void ReadCategories(object sender, RoutedEventArgs e)
         {
-            MainPage.Navigate(new Views.SghowDatas());
-            var data = read.Readcategories();
-            sghow.dataGrid1.ItemsSource = data;
+            MainPage.Navigate(new Views.Showcategories());
         }
         private void categories(object sender, RoutedEventArgs e)
         {

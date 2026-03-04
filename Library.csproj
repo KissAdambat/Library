@@ -191,6 +191,15 @@
     <Compile Include="Views\DeleteCategories.xaml.cs">
       <DependentUpon>DeleteCategories.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ShowAuthors.xaml.cs">
+      <DependentUpon>ShowAuthors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowBooks.xaml.cs">
+      <DependentUpon>ShowBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Showcategories.xaml.cs">
+      <DependentUpon>Showcategories.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShowDatas.xaml.cs">
       <DependentUpon>ShowDatas.xaml</DependentUpon>
     </Compile>
@@ -228,6 +237,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DeleteCategories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShowAuthors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShowBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Showcategories.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
